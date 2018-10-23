@@ -1,0 +1,535 @@
+<resources>
+<string name="app_name">AndroMedia</string>
+<string name="topics_button">Topics button</string>
+
+<!-- TOPIC 1 STRINGS -->
+<string name="First_t1">
+       Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies.
+    </string>
+
+<string name="Second_t1">
+        This tutorial has been prepared for the beginners to help them understand basic Android programming. After completing this tutorial, you will find yourself at a moderate level of expertise in Android programming from where you can take yourself to next levels.
+
+\nAndroid programming is based on Java programming language so if you have basic un-derstanding on Java programming then it will be a fun to learn Android application development.
+    </string>
+
+<string name="Third_t1">
+       "You will be glad to know that you can start your Android application develop-ment on either of the following operating systems −\n
+•  Microsoft Windows XP or later version.\n
+•  Mac OS X 10.5.8 or later version with Intel chip.\n
+•  Linux including GNU C Library 2.7 or later.\n
+Second point is that all the required tools to develop Android applications are freely available and can be downloaded from the Web. Following is the list of software's you will need before you start your Android application programming.\n
+•  Java JDK5 or later version\n
+•  Android Studio"
+    </string>
+
+<string name="architecture"> <u><b>\nArchitecture</b></u> </string>
+<string name="Fourth_t1">
+        \nAndroids operating system is a stack of software components which is roughly divided into five sections and four main layers as shown below in the architecture diagram.\n
+    </string>
+
+<string name="linux_kernel"> <u><b>\nLinux Kernel</b></u> </string>
+<string name="Fifth_t1">
+    \nAt the bottom of the layers is Linux - Linux 3.6 with approximately 115 patches. This provides a level of abstraction between the device hardware and it contains all the essential hardware drivers like camera, keypad, display etc. Also, the kernel han-dles all the things that Linux is really good at such as networking and a vast array of device drivers, which take the pain out of interfacing to peripheral hardware.
+    </string>
+
+<string name="Libraries"> <u><b>\nLibraries</b></u> </string>
+<string name="Sixth_t1">
+    \nOn top of Linux kernel there is a set of libraries including open-source Web browser engine WebKit, well known library libc, SQLite database which is a useful re-pository for storage and sharing of application data, libraries to play and record audio and video, SSL libraries responsible for Internet security etc.
+    </string>
+
+<string name="android_libraries"> <u><b>\nAndroid Libraries</b></u> </string>
+<string name="Seventh_t1">"\nThis category encompasses those Java-based libraries that are specific to Android development. Examples of libraries in this category in-clude the application framework libraries in addition to those that facilitate user interface building, graphics drawing and database access. A summary of some key core Android libraries available to the Android developer is as follows −\n\n
+•  android.app − Provides access to the application model and is the cornerstone of all Android applications.\n
+•  android.content − Facilitates content access, publishing and messaging between ap-plications and application components.\n
+•  android.database − Used to access data published by content providers and includes SQLite database management classes.\n
+•  android.opengl − A Java interface to the OpenGL ES 3D graphics rendering API.\n
+•  android.os − Provides applications with access to standard operating system ser-vices including messages, system services and inter-process communication.\n
+•  android.text − Used to render and manipulate text on a device display.\n
+•  android.view − The fundamental building blocks of application user interfaces.\n
+•  android.widget − A rich collection of pre-built user interface components such as buttons, labels, list views, layout managers, radio buttons etc.\n
+•  android.webkit − A set of classes intended to allow web-browsing capabilities to be built into applications.\n
+Having covered the Java-based core libraries in the Android runtime, it is now time to turn our attention to the C/C++ based libraries contained in this layer of the Android software stack."
+</string>
+
+<string name="android_runtime"> <u><b>\nAndroid Runtime</b></u> </string>
+<string name="Eigth_t1">\nThis is the third section of the architecture and avail-able on the second layer from the bottom. This section provides a key component called Dalvik Virtual Machine which is a kind of Java Virtual Machine specially designed and optimized for Android.
+The Dalvik VM makes use of Linux core features like memory management and multi-threading, which is intrinsic in the Java language. The Dalvik VM enables every An-droid application to run in its own process, with its own instance of the Dalvik vir-tual machine.
+The Android runtime also provides a set of core libraries which enable Android appli-cation developers to write Android applications using standard Java programming lan-guage.
+</string>
+
+<string name="application_framework"> <u><b>\nApplication Framework</b></u> </string>
+<string name="Ninth_t1">"\nThe Application Framework layer provides many higher-level services to applications in the form of Java classes. Application developers are allowed to make use of these services in their applications.
+The Android framework includes the following key services −\n\n
+•  Activity Manager − Controls all aspects of the application lifecycle and activity stack.\n
+•  Content Providers − Allows applications to publish and share data with other appli-cations.\n
+•  Resource Manager − Provides access to non-code embedded resources such as strings, color settings and user interface layouts.\n
+•  Notifications Manager − Allows applications to display alerts and notifications to the user.\n
+•  View System − An extensible set of views used to create application user interfac-es."
+</string>
+
+<string name="applications"> <u><b>\nApplications</b></u> </string>
+<string name="Tenth_t1">\nYou will find all the Android application at the top layer. You will write your application to be installed on this layer only. Examples of such applications are Contacts Books, Browser, Games etc.</string>
+<!-- TOPIC 1 STRINGS -->
+
+<!-- Topic 2 Strings -->
+<string name="First_t2">
+    Application components are the essential building blocks of an Android applica-tion. These components are loosely coupled by the application manifest file An-droidManifest.xml that describes each component of the application and how they inter-act.
+    There are following four main components that can be used within an Android appli-cation −\n
+    </string>
+<string name="First_table_t2">
+       " Activities\n
+•  They dictate the UI and handle the user interaction to the smart phone screen.
+Services\n
+•  They handle background processing associated with an application.
+Broadcast Receivers\n
+•  They handle communication between Android OS and applications.
+Content Providers\n
+•  They handle data and database management issues."
+    </string>
+<string name="activities"><u><b>\nActivities</b></u></string>
+<string name="Second_t2">
+        \nAn activity represents a single screen with a user interface, in-short Ac-tivity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. If an application has more than one activity, then one of them should be marked as the activity that is presented when the applica-tion is launched.
+        \nAn activity is implemented as a subclass of Activity class as follows −\n
+    </string>
+<string name="code_example_1">
+        "public class MainActivity extends Activity {}"
+    </string>
+<string name="services"><u><b>\nServices</b></u></string>
+<string name="Third_t2">
+        \nA service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application, or it might fetch data over the network without block-ing user interaction with an activity.
+        \nA service is implemented as a subclass of Service class as follows −\n
+    </string>
+<string name="code_example_2">
+        "public class MyService extends Service {}"
+    </string>
+<string name="broadcast_receivers"><u><b>\nBroadcast Receivers</b></u></string>
+<string name="Fourth_t2">
+        \nBroadcast Receivers simply respond to broadcast messages from other applica-tions or from the system. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this com-munication and will initiate appropriate action.
+        \nA broadcast receiver is implemented as a subclass of BroadcastReceiver class and each message is broadcaster as an Intent object.\n
+    </string>
+<string name="code_example_3">
+        "public class MyReceiver  extends  BroadcastReceiver {
+            public void onReceive(context,intent){}
+        }"
+    </string>
+<string name="content_providers"><u><b>\nContent Providers</b></u></string>
+<string name="Fifth_t2">
+        \nA content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. The data may be stored in the file system, the database or somewhere else entirely.
+        \nA content provider is implemented as a subclass of ContentProvider class and must implement a standard set of APIs that enable other applications to perform trans-actions.\n
+    </string>
+<string name="code_example_4">
+        "public class MyContentProvider extends  ContentProvider {
+            public void onCreate(){}
+        }"
+    </string>
+<string name="additional_components"><u><b>\nAdditional Compo-nents</b></u></string>
+<string name="Sixth_t2">
+"\nThere are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are −\n
+Fragments\n
+•  Represents a portion of user interface in an Activity.\n
+Views\n
+•  UI elements that are drawn on-screen including buttons, lists forms etc.\n
+Layouts\n
+•  View hierarchies that control screen format and appearance of the views.\n
+Intents\n
+•  Messages wiring components together.\n
+Resources\n
+•  External elements, such as strings, constants and drawable pictures.\n
+Manifest\n
+•  Configuration file for the application.\n"
+    </string>
+<!-- Topic 2 Strings -->
+
+<!--Topic 3 String -->
+<string name="First_t3">
+"Before you run your app, you should be aware of a few directories and files in the Android project −\n
+Java\n
+•  This contains the .java source files for your project. By default, it includes an MainActivity.java source file having an activity class that runs when your app is launched using the app icon.\n
+res/drawable-hdpi\n
+•  This is a directory for drawable objects that are designed for high-density screens.\n
+res/layout\n
+•  This is a directory for files that define your app's user interface.\n
+res/values\n
+•  This is a directory for other various XML files that contain a collection of resources, such as strings and colours definitions.\n
+AndroidManifest.xml\n
+•  This is the manifest file which describes the fundamental characteristics of the app and defines each of its components.\n
+Build.gradle\n
+•  This is an auto generated file which contains compileSdkVersion, buildTools-Version, applicationId, minSdkVersion, targetSdkVersion, versionCode and versionNam"
+    </string>
+<string name="Main_activity"><u><b>\nMain Activity</b></u></string>
+<string name="Second_t3">
+\nThe main activity code is a Java file MainActivity.java. This is the actual application file which ultimately gets converted to a Dalvik executable and runs your application. Following is the default code generated by the application wizard for Hello World! application −\n
+</string>
+<string name="code_example_1_t3">
+        "package com.example.helloworld;
+
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
+
+        public class MainActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+        }
+    }"
+    </string>
+<string name="Third_t3">
+        Here, R.layout.activity_main refers to the activity_main.xml file located in the res/layout folder. The onCreate() method is one of many methods that are figured when an activity is loaded.\n
+    </string>
+<string name="Manifest_File"><u><b>\nManifest File</b></u></string>
+<string name="Fourth_t3">
+        \nWhatever component you develop as a part of your application, you must de-clare all its components in a manifest.xml which resides at the root of the applica-tion project directory. This file works as an interface between Android OS and your application, so if you do not declare your component in this file, then it will not be considered by the OS. For example, a default manifest file will look like as following file −\n
+    </string>
+<string name="code_example_2_t3">
+
+        xml version="1.0" encoding="utf-8"?>
+        manifest xmlns:android="http://schemas.android.com/apk/res/android"
+            package="com.example.tutorialspoint7.myapplication"
+
+   application
+       android:allowBackup="true"
+       android:icon="@mipmap/ic_launcher"
+       android:label="@string/app_name"
+       android:supportsRtl="true"
+       android:theme="@style/AppTheme"
+
+      activity android:name=".MainActivity"
+         intent-filter
+            action android:name="android.intent.action.MAIN"
+            category android:name="android.intent.category.LAUNCHER"
+         intent-filter
+      activity
+    application
+    manifest
+
+    </string>
+<string name="Fifth_t3">
+       \nHere (application)(/application) tags enclosed the components related to the application. Attribute android:icon will point to the application icon available under res/drawable-hdpi. The application uses the image named ic launcher.png located in the drawable folders.\n
+        \nThe (activity)(/activity) tag is used to specify an activity and android:name attribute specifies the fully qualified class name of the Activity subclass and the android:label attributes specifies a string to use as the label for the activity. You can specify multiple activities using activity> tags.\n
+        \nThe action for the intent filter is named android.intent.action.MAIN to indi-cate that this activity serves as the entry point for the application. The category for the intent-filter is named android.intent.category.LAUNCHER to indicate that the application can be launched from the device\'s launcher icon.\n
+        \nThe @string refers to the strings.xml file explained below. Hence, @string/app_name refers to the app_name string defined in the strings.xml file, which is "HelloWorld". Similar way, other strings get populated in the application.\n
+        \nFollowing is the list of tags which you will use in your manifest file to specify different Android application components −\n
+        •  (activity) elements for activities\n
+        •  (service) elements for services\n
+        •  (receiver) elements for broadcast receivers\n
+        •  (provider) elements for content providers
+    </string>
+<string name="String_File"><u><b>\nString File</b></u></string>
+<string name="Sixth_t3">\nThe strings.xml file is located in the res/values folder and it contains all the text that your application uses. For example, the names of buttons, labels, default text, and similar types of strings go into this file. This file is responsible for their textual content. For example, a default strings file will look like as following file −</string>
+<string name="code_example_3_t3">
+        "
+       resources
+            string name="app_name"HelloWorld string
+            string name="hello_world"Hello world! string
+            string name="menu_settings"Settings string
+            string name="title_activity_main"MainActivity string
+        resources
+        "
+    </string>
+<string name="Layout_File"><u><b>Layout File</b></u></string>
+<string name="Seventh_t3">\nThe activity_main.xml is a layout file available in res/layout directory, that is referenced by your application when building its inter-face. You will modify this file very frequently to change the layout of your applica-tion. For your "Hello World!" application, this file will have following content re-lated to default layout −\n</string>
+<string name="code_example_4_t3">
+
+        RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+   TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:padding="@dimen/padding_medium"
+       android:text="@string/hello_world"
+       tools:context=".MainActivity"
+    RelativeLayout
+
+    </string>
+<string name="Eigth_t3">\nThis is an example of simple RelativeLayout which we will study in a separate chapter. The TextView is an Android control used to build the GUI and it have various attributes like android:layout_width, android:layout_height etc which are being used to set its width and height etc.. The @string refers to the strings.xml file located in the res/values folder. Hence, @string/hello_world refers to the hello string defined in the strings.xml file, which is "Hello World!".</string>
+<!--Topic 3 String -->
+
+<!-- Topic 4 Strings -->
+<string name="First_t4">
+There are many more items which you use to build a good Android application. Apart from coding for the application, you take care of various other resources like static content that your code uses, such as bitmaps, colors, layout definitions, user interface strings, animation instructions, and more. These resources are always maintained separately in various sub-directories under res/ directory of the project.
+</string>
+<string name="Organise_Resources"><u><b>\nOrganising Resources\n</b></u></string>
+<string name="Second_t4">
+anim/\n
+    XML files that define property animations. They are saved in res/anim/ folder and accessed from the R.anim class.\n\n
+color/\n
+    XML files that define a state list of colors. They are saved in res/color/ and accessed from the R.color class.\n\n
+drawable/\n
+    Image files like .png, .jpg, .gif or XML files that are compiled into bitmaps, state lists, shapes, animation drawable. They are saved in res/drawable/ and accessed from the R.drawable class.\n\n
+layout/\n
+    XML files that define a user interface layout. They are saved in res/layout/ and accessed from the R.layout class.\n\n
+menu/\n
+    XML files that define application menus, such as an Options Menu, Context Menu, or Sub Menu. They are saved in res/menu/ and accessed from the R.menu class.\n\n
+raw/\n
+    Arbitrary files to save in their raw form. You need to call Resources.openRawResource() with the resource ID, which is R.raw.filename to open such raw files.\n\n
+values/\n
+    XML files that contain simple values, such as strings, integers, and colors. For example, here are some filename conventions for resources you can create in this directory −\n\n
+    •  arrays.xml for resource arrays, and accessed from the R.array class.\n
+    •  integers.xml for resource integers, and accessed from the R.integer class.\n
+    •  bools.xml for resource boolean, and accessed from the R.bool class.\n
+    •  colors.xml for color values, and accessed from the R.color class.\n
+    •  dimens.xml for dimension values, and accessed from the R.dimen class.\n
+    •  strings.xml for string values, and accessed from the R.string class.\n
+    •  styles.xml for styles, and accessed from the R.style class.\n\n
+xml/\n
+    Arbitrary XML files that can be read at runtime by calling Resources.getXML(). You can save various configuration files here which will be used at run time.\n
+    </string>
+<string name="Alternative_Resources"><u><b>Alternative Resources</b></u></string>
+<string name="Third_t4">
+        \nYour application should provide alternative resources to support specific device configurations. For example, you should include alternative drawable resources ( i.e.images ) for different screen resolution and alternative string resources for different languages. At runtime, Android detects the current device configuration and loads the appropriate resources for your application.\n
+
+    \nTo specify configuration-specific alternatives for a set of resources, follow the following steps −\n
+
+    \n•  Create a new directory in res/ named in the form (resources_name) (config_qualifier). Here resources_name will be any of the resources mentioned in the above table, like layout, drawable etc. The qualifier will specify an individual configuration for which these resources are to be used. You can check official documentation for a complete list of qualifiers for different type of resources.\n
+
+    \n•  Save the respective alternative resources in this new directory. The resource files must be named exactly the same as the default resource files as shown in the below example, but these files will have content specific to the alternative. For example though image file name will be same but for high resolution screen, its resolution will be high.\n
+
+    \nBelow is an example which specifies images for a default screen and alternative images for high resolution screen.\n
+    </string>
+<string name="code_example_1_t4">
+        MyProject/
+   app/
+      manifest/
+         AndroidManifest.xml
+   java/
+      MyActivity.java
+         res/
+            drawable/
+               icon.png
+               background.png
+         drawable-hdpi/
+            icon.png
+            background.png
+         layout/
+            activity_main.xml
+            info.xml
+         values/
+            strings.xml
+    </string>
+<string name="Accessing_Resources"><u><b>\nAccessing Resources</b></u></string>
+<string name="Fourth_t4">\nDuring your application development, you will need to access defined resources either in your code, or in your layout XML files. The following section explains how to access your resources in both the scenarios\n</string>
+<string name="Accessing_Resources_Code"><u>Accessing Resources in Code</u></string>
+<string name="Fifth_t4">
+        \nWhen your Android application is compiled, a R class gets generated, which contains resource IDs for all the resources available in your res/ directory. You can use R class to access that resource using sub-directory and resource name or directly resource ID.\n\nTo access res/drawable/myimage.png and set an ImageView you will use following code −\n
+    </string>
+<string name="code_example_2_t4">
+        ImageView imageView = (ImageView) findViewById(R.id.myimageview);
+        imageView.setImageResource(R.drawable.myimage);
+    </string>
+<string name="Sixth_t4">
+        \nHere first line of the code make use of R.id.myimageview to get ImageView defined with id myimageview in a Layout file. Second line of code makes use ofR.drawable.myimage to get an image with name myimage available in drawable sub-directory under /res.
+
+        Consider next example where res/values/strings.xml has following definition −\n
+    </string>
+<string name="code_example_3_t4">
+        xml version="1.0" encoding="utf-8"?
+        resources
+            string  name="hello">Hello, World! string
+        resources
+    </string>
+<string name="Seventh_t4">
+        \nNow you can set the text on a TextView object with ID msg using a resource ID as follows −\n
+    </string>
+<string name="code_example_4_t4">
+        TextView msgTextView = (TextView) findViewById(R.id.msg);
+        msgTextView.setText(R.string.hello);
+    </string>
+<string name="Eigth_t4">\nConsider a layout res/layout/activity_main.xml with the following definition −\n</string>
+<string name="code_example_5_t4">
+        xml version="1.0" encoding="utf-8"
+        LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+        TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am a TextView"
+
+        Button android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am a Button"
+        LinearLayout
+    </string>
+<string name="Ninth_t4">\nThis application code will load this layout for an Activity, in the onCreate() method as follows −\n</string>
+<string name="code_example_6_t4">
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.main_activity);
+        }
+    </string>
+<string name="Accessing_Resources_XML"><u>\nAccessing Resources in XML</u></string>
+<string name="Tenth_t4">\nConsider the following resource XML res/values/strings.xml file that includes a color resource and a string resource −\n</string>
+<string name="code_example_7_t4">
+        xml version="1.0" encoding="utf-8"
+        resources
+            color name="opaque_red" #f00color
+            string name="hello"Hello! string
+        resources
+    </string>
+<string name="Eleven_t4">\nNow you can use these resources in the following layout file to set the text color and text string as follows −\n</string>
+<string name="code_example_8_t4">
+        xml version="1.0" encoding="utf-8"
+        EditText xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/opaque_red"
+            android:text="@string/hello"
+    </string>
+<string name="Twelve_t4">"\nNow if you will go through previous chapter once again where I have explained Hello World! example, and I'm sure you will have better understanding on all the concepts explained in this chapter. So I highly recommend to check previous chapter for working example and check how I have used various resources at very basic level.\n"</string>
+<!-- Topic 4 Strings -->
+
+<!-- Topic 5 Strings -->
+<string name="First_t5">
+        \nIf you have worked with C, C++ or Java programming language then you must have seen that your program starts from main() function. Very similar way, Android system initiates its program with in an Activity starting with a call on onCreate() callback method. There is a sequence of callback methods that start up an activity and a sequence of callback methods that tear down an activity as shown in the below Activity life cycle diagram:\n
+    </string>
+<string name="Second_t5">
+"\nThe Activity class defines the following call backs i.e. events. You don't need to implement all the callbacks methods. However, it's important that you understand each one and implement those that ensure your app behaves the way users expect.
+\nCallback and Description
+•  onCreate()
+    This is the first callback and called when the activity is first created.\n
+•  onStart()
+    This callback is called when the activity becomes visible to the user.\n
+•  onResume()
+    This is called when the user starts interacting with the application.\n
+•  onPause()
+    The paused activity does not receive user input and cannot execute any code and called when the current activity is being paused and the previous activity is being resumed.\n
+•  onStop()
+    This callback is called when the activity is no longer visible.\n
+•  onDestroy()
+    This callback is called before the activity is destroyed by the system.\n
+•  onRestart()
+    This callback is called when the activity restarts after stopping it."
+    </string>
+<string name="Third_t5">
+"\nThis example will take you through simple steps to show Android application activity life cycle. Follow the following steps to modify the Android application we created in Hello World Example chapter −
+
+Step Description
+1.  You will use Android studio to create an Android application and name it as HelloWorld under a package com.example.helloworld as explained in the Hello World Example chapter.\n
+2.  Modify main activity file MainActivity.java as explained below. Keep rest of the files unchanged.\n
+3.  Run the application to launch Android emulator and verify the result of the changes done in the application.\n
+Following is the content of the modified main activity file src/com.example.helloworld/MainActivity.java. This file includes each of the fundamental life cycle methods. The Log.d() method has been used to generate log messages −"
+    </string>
+<string name="code_example_1_t5">
+       "\npackage com.example.helloworld;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+
+public class MainActivity extends Activity {
+   String msg = "Android : ";
+
+   /** Called when the activity is first created. */
+   @Override
+   public void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_main);
+      Log.d(msg, "The onCreate() event");
+   }
+
+   /** Called when the activity is about to become visible. */
+   @Override
+   protected void onStart() {
+      super.onStart();
+      Log.d(msg, "The onStart() event");
+   }
+
+   /** Called when the activity has become visible. */
+   @Override
+   protected void onResume() {
+      super.onResume();
+      Log.d(msg, "The onResume() event");
+   }
+
+   /** Called when another activity is taking focus. */
+   @Override
+   protected void onPause() {
+      super.onPause();
+      Log.d(msg, "The onPause() event");
+   }
+
+   /** Called when the activity is no longer visible. */
+   @Override
+   protected void onStop() {
+      super.onStop();
+      Log.d(msg, "The onStop() event");
+   }
+
+   /** Called just before the activity is destroyed. */
+   @Override
+   public void onDestroy() {
+      super.onDestroy();
+      Log.d(msg, "The onDestroy() event");
+   }
+}"
+    </string>
+<string name="Fourth_t5">
+        \nAn activity class loads all the UI component using the XML file available in res/layout folder of the project. Following statement loads UI components from res/layout/activity_main.xml file:\n
+    </string>
+<string name="code_example_2_t5">
+        setContentView(R.layout.activity_main);
+    </string>
+<string name="Fifth_t5">
+        \nAn application can have one or more activities without any restrictions. Every activity you define for your application must be declared in your AndroidManifest.xml file and the main activity for your app must be declared in the manifest with an intent-filter that includes the MAIN action and LAUNCHER category as follows:\n
+    </string>
+<string name="code_example_3_t5">
+       " xml version="1.0" encoding="utf-8"
+        manifest xmlns:android="http://schemas.android.com/apk/res/android"
+            package="com.example.tutorialspoint7.myapplication"
+
+    application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        activity android:name=".MainActivity"
+            intent-filter
+                action android:name="android.intent.action.MAIN"
+
+                category android:name="android.intent.category.LAUNCHER"
+            intent-filter
+        activity
+    application
+
+manifest"
+    </string>
+<string name="Sixth_t5">
+        \nIf either the MAIN action or LAUNCHER category are not declared for one of your activities, then your app icon will not appear in the Home screen\'s list of apps
+    </string>
+<!-- Topic 5 Strings -->
+
+<!-- Pop_UP Strings -->
+<string name="Paragraph_1_PU">
+        Want to learn how to code in java? Well this is the app for you. Experience a fluid system that progressively teaches you java and will allow you to test your skills.
+    </string>
+<string name="Paragraph_2_PU">
+        Simply select a topic from the list and learn! Once you’re confident in your abilities. A quiz is available that will test your knowledge of that topic.  You can even track your results on the timeline and see how you’ve improved!
+    </string>
+<!-- Pop_UP Strings -->
+
+<!-- TIMELINE STRINGS -->
+<string name="Timeline_Under">"Partially Under \nConstruction!"</string>
+<string name="CurrentScore1">"point/s this attempt."</string>
+<string name="CurrentScore2">"point/s this attempt."</string>
+<string name="CurrentScore3">"point/s this attempt."</string>
+<string name="CurrentScore4">"point/s this attempt."</string>
+<string name="CurrentScore5">"point/s this attempt."</string>
+<string name="HighScore1">"High score for Topic 1: "</string>
+<string name="HighScore2">"High score for Topic 2: "</string>
+<string name="HighScore3">"High score for Topic 3: "</string>
+<string name="HighScore4">"High score for Topic 4: "</string>
+<string name="HighScore5">"High score for Topic 5: "</string>
+<!-- TIMELINE STRINGS -->
+
+</resources>

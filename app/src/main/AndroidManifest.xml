@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jake.andromedia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Creates splash screen at begin -->
+        <!-- ************SPLASH SCREEN************ -->
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- ************SPLASH SCREEN************ -->
+
+
+        <!-- ************MAIN SCREEN************ -->
+        <activity android:name=".MainActivity" />
+        <!-- ************MAIN SCREEN************ -->
+
+
+        <!-- ************SETTINGS SCREEN************ -->
+        <activity android:name=".Settings" />
+        <!-- ************SETTINGS SCREEN************ -->
+
+
+        <!-- ************POP SCREEN************ -->
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <!-- ************POP SCREEN************ -->
+
+
+        <!-- ************TOPICS SCREEN************ -->
+        <activity android:name=".Topics" />
+        <!-- ************TOPICS SCREEN************ -->
+
+
+        <!-- Each topic has a page teaching some fundamentals -->
+        <!-- ************TOPICS SCREEN************ -->
+        <activity android:name=".Topic_1" />
+        <activity android:name=".Topic_2" />
+        <activity android:name=".Topic_3" />
+        <activity android:name=".Topic_4" />
+        <activity android:name=".Topic_5" />
+        <!-- ************TOPICS SCREEN************ -->
+
+
+        <!-- ************QUIZ SCREEN************ -->
+        <activity android:name=".Quiz" />
+        <!-- ************SPLASH SCREEN************ -->
+
+
+        <!-- ************TIMELINE SCREEN************ -->
+        <activity android:name=".Timeline" />
+        <!-- ************TIMELINE SCREEN************ -->
+        <activity android:name=".Quiz_Topics"></activity>
+    </application>
+
+</manifest>
